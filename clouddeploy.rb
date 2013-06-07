@@ -45,21 +45,11 @@ ami_map =  {
 }
 
 recipe_map ={
-  'client' => "recipe[servers-#{recipeVersion}::client]",
-  'engine' => "recipe[servers-#{recipeVersion}::engine]",
-  'enginelb' => "recipe[servers-#{recipeVersion}::enginelb]",
-  'execution' => "recipe[servers-#{recipeVersion}::execution]",
-  'performance' => "recipe[servers-#{recipeVersion}::performance]",
-  'research' => "recipe[servers-#{recipeVersion}::research]",
-  'price' => "recipe[servers-#{recipeVersion}::price]",
-  'blog' => "recipe[servers-#{recipeVersion}::blog]",
-  'jobs' => "recipe[servers-#{recipeVersion}::jobs]",
-  'user' => "recipe[servers-#{recipeVersion}::user]",
-  'site' => "recipe[servers-#{recipeVersion}::site]",
-  'sitelb' => "recipe[servers-#{recipeVersion}::sitelb]",
-  'signup' => "recipe[servers-#{recipeVersion}::signup]",
-  'executionworker' => "recipe[servers-#{recipeVersion}::executionworker]",
-  'engineworker' => "recipe[servers-#{recipeVersion}::engineworker]"
+  'test_service' => "recipe[servers-#{recipeVersion}::test_service]",
+  'test2_service' => "recipe[servers-#{recipeVersion}::test2_service]",
+  'test3_service' => "recipe[servers-#{recipeVersion}::test3_service]",
+  'test_worker' => "recipe[servers-#{recipeVersion}::test_worker]",
+  'test2_worker' => "recipe[servers-#{recipeVersion}::test2_worker]"
 }
   
 key_map = { 
